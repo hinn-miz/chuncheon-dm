@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>춘천 동문 디 이스트 어반포레</title>
+    <meta name="description" content="춘천의 마지막 4억대분양, 춘천 동문 디 이스트 어반포레. 569세대, 최고 29층, 84㎡(실평수 36평+), 28년 10월 입주! 모델하우스 방문 예약 및 로얄층 상담.">
+    <meta name="keywords" content="춘천동문디이스트어반포레, 춘천아파트분양, 춘천모델하우스, 아파트분양">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="춘천 동문 디 이스트 어반포레">
+    <meta property="og:description" content="합리적가격과 파격적 혜택!. 상담 예약 시 특별 혜택을 제공합니다.">
+    <meta property="og:image" content="images/og_image.webp"> 
+    <meta property="og:url" content="https://chuncheon-dm.netlify.app/"> 
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* =======================================================
+           1. 전체 기본 설정 및 스크롤 동작
+           ======================================================= */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 60px; 
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f4f6f9; 
+            color: #333;
+            -webkit-text-size-adjust: none;
+        }
+
+        /* =======================================================
+           2. 메인 헤더 배너
+           ======================================================= */
+        .header-banner {
+            width: 100%;
+            background-color: #0b1a2e; 
+            text-align: center;
+        }
+        .header-banner a { display: block; }
+        .header-banner img {
+            width: 100%;
+            max-width: 800px; 
+            height: auto;
+            display: block;
+            margin: 0 auto; 
+        }
+
+        /* =======================================================
+           3. 상단 탭 네비게이션
+           ======================================================= */
+        .navbar {
+            position: sticky; 
+            top: 0; 
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #0b1a2e; 
+            border-bottom: 1px solid #1a2f4c; 
+            
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            overflow-x: auto; 
+            white-space: nowrap; 
+            z-index: 1000; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3); 
+            -webkit-overflow-scrolling: touch;
+        }
+        .navbar a {
+            flex: 0 0 auto; 
+            padding: 0 16px; 
+            text-decoration: none; 
+            color: #ffffff; 
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 56px; 
+            transition: color 0.3s ease; 
+        }
+        .navbar a:hover, .navbar a:active { color: #d4af37; }
+        .navbar::-webkit-scrollbar { display: none; }
+
+        @media (max-width: 768px) {
+            .navbar { justify-content: flex-start; padding-left: 5px; }
+            .navbar a { padding: 0 14px; font-size: 14px; }
+            .navbar::-webkit-scrollbar { display: block; height: 3px; }
+            .navbar::-webkit-scrollbar-track { background: #0b1a2e; }
+            .navbar::-webkit-scrollbar-thumb { background: #d4af37; border-radius: 3px; }
+        }
+
+        /* =======================================================
+           4. 본문 내용 컨테이너
+           ======================================================= */
+        .container {
+            width: 100%;
+            max-width: 800px; 
+            margin: 0 auto;
+            background-color: #ffffff; 
+            box-shadow: 0 0 15px rgba(0,0,0,0.05); 
+        }
+
+        /* =======================================================
+           5. 각 섹션 공통
+           ======================================================= */
+        .section {
+            width: 100%;
+            padding: 40px 0 20px 0;
+            text-align: center;
+            border-bottom: 1px solid #eaeaea; 
+        }
+        .section-title {
+            font-size: 26px;
+            color: #0b1a2e; 
+            margin-bottom: 30px;
+            font-weight: 700;
+            letter-spacing: 2px; 
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #d4af37; 
+            margin: 10px auto 0 auto;
+        }
+        .image-link { display: block; margin-bottom: -4px; }
+        .image-link img { width: 100%; height: auto; display: block; }
+
+        /* =======================================================
+           6. 하단 폼 영역
+           ======================================================= */
+        .form-section {
+            background-color: #0b1a2e; 
+            color: #ffffff;
+            padding: 50px 20px;
+            box-sizing: border-box;
+            text-align: center;
+            border-top: 5px solid #d4af37; 
+        }
+        .form-section h2 { margin-top: 0; font-size: 26px; color: #d4af37; letter-spacing: 1px; }
+        .form-section p { color: #b0c4de; margin-bottom: 30px; line-height: 1.6; word-break: keep-all; }
+        .input-group { margin-bottom: 15px; }
+        .input-group input {
+            width: 100%; max-width: 400px; padding: 15px; font-size: 16px; 
+            border: 1px solid #2c3e50; border-radius: 4px; background-color: #ffffff;
+            color: #333; box-sizing: border-box; 
+        }
+        .checkbox-group { font-size: 14px; margin-bottom: 25px; color: #b0c4de; }
+        
+        /* [추가] 자세히 보기 버튼 스타일 */
+        .view-details { 
+            text-decoration: underline; 
+            cursor: pointer; 
+            margin-left: 8px; 
+            color: #d4af37; 
+            font-weight: bold; 
+        }
+
+        .submit-btn {
+            width: 100%; max-width: 400px; background-color: #d4af37; color: #0b1a2e; 
+            padding: 16px; font-size: 20px; font-weight: 700; border: none; 
+            border-radius: 4px; cursor: pointer; transition: background-color 0.3s ease; 
+        }
+        .submit-btn:hover { background-color: #c5a059; color: #ffffff; }
+
+        /* =======================================================
+           7. 하단 푸터 (법적 고지 및 사업자 정보)
+           ======================================================= */
+        .footer {
+            background-color: #f1f3f5; 
+            color: #555;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 13px;
+            line-height: 1.8;
+            border-top: 1px solid #e0e0e0;
+        }
+        .footer-notice {
+            color: #3b3838; 
+            font-weight: 500;
+            margin-bottom: 20px;
+            word-break: keep-all;
+        }
+        .footer-info { margin-bottom: 8px; }
+        .footer-admin { margin-bottom: 20px; }
+        .footer span {
+            display: inline-block;
+            margin: 0 10px; 
+        }
+        .footer strong { color: #333; }
+        .footer-copyright {
+            font-size: 12px;
+            color: #999;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 600px) {
+            .footer span {
+                display: block;
+                margin: 4px 0;
+            }
+        }
+
+        /* =======================================================
+           8. 개인정보 처리방침 모달(팝업) 스타일
+           ======================================================= */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 2000; 
+            left: 0; 
+            top: 0; 
+            width: 100%; 
+            height: 100%;
+            background-color: rgba(0,0,0,0.7); /* 반투명 검은색 배경 */
+        }
+        .modal-content {
+            background-color: #ffffff; 
+            margin: 10% auto; 
+            padding: 25px; 
+            border-radius: 8px;
+            width: 85%; 
+            max-width: 500px; 
+            max-height: 70vh; 
+            color: #333; 
+            text-align: left;
+            position: relative;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            /* 내용이 많으면 내부 스크롤 생성 */
+            overflow-y: auto; 
+        }
+        .modal-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 2px solid #0b1a2e; 
+            padding-bottom: 12px; 
+            margin-bottom: 15px; 
+        }
+        .modal-header h3 { 
+            margin: 0; 
+            color: #0b1a2e; 
+            font-size: 18px; 
+            font-weight: 700;
+        }
+        .close-modal { 
+            font-size: 28px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            color: #999; 
+            line-height: 1;
+        }
+        .close-modal:hover { color: #e74c3c; }
+        .modal-body { 
+            line-height: 1.6; 
+            font-size: 14px; 
+            color: #555;
+        }
+        .modal-body strong { color: #222; }
+    </style>
+</head>
+<body>
+
+    <header class="header-banner">
+        <a href="tel:1666-6093">
+            <img src="images/header_banner.webp" alt="춘천 동문 디 이스트 어반포레 메인 배너 (클릭시 전화연결)">
+        </a>
+    </header>
+
+    <nav class="navbar">
+        <a href="#info">핵심정보</a>
+        <a href="#overview">사업개요</a>
+        <a href="#location">입지환경</a>
+        <a href="#premium">프리미엄</a>
+        <a href="#layout">단지배치도</a>
+        <a href="#special">단지특화</a>
+        <a href="#floorplan">평면안내</a>
+        <a href="#contact">상담·방문문의</a>
+    </nav>
+
+    <div class="container">
+
+        <div id="info" class="section">
+            <div class="section-title">핵심정보</div>
+            <a href="tel:1666-6093" class="image-link"><img src="images/info_01.webp" alt="핵심정보 1" loading="lazy"></a>
+            <br/>
+            <a href="tel:1666-6093" class="image-link"><img src="images/info_02.webp" alt="핵심정보 2" loading="lazy"></a>
+            <br/>
+            <a href="tel:1666-6093" class="image-link"><img src="images/info_03.webp" alt="핵심정보 3" loading="lazy"></a>
+            <br/>
+
+        </div>
+
+        <div id="overview" class="section">
+            <div class="section-title">사업개요</div>
+            <a href="tel:1666-6093" class="image-link"><img src="images/overview_01.webp" alt="사업개요 1" loading="lazy"></a>
+            <a href="tel:1666-6093" class="image-link"><img src="images/call.webp" alt="콜" loading="lazy"></a>
+        </div>
+
+        <div id="location" class="section">
+            <div class="section-title">입지환경</div>
+            <a href="tel:1666-6093" class="image-link"><img src="images/location_01.webp" alt="입지환경 1" loading="lazy"></a>
+            <a href="tel:1666-6093" class="image-link"><img src="images/call.webp" alt="콜" loading="lazy"></a>
+        </div>
+
+        <div id="premium" class="section">
+            <div class="section-title">프리미엄</div>
+            <a href="tel:1666-6093" class="image-link"><img src="images/premium_01.webp" alt="프리미엄 1" loading="lazy"></a>
+            <a href="tel:1666-6093" class="image-link"><img src="images/call.webp" alt="콜" loading="lazy"></a>
+        </div>
+
+        <div id="layout" class="section">
+            <div class="section-title">단지배치도</div>
+            <a href="tel:1666-6093" class="image-link"><img src="images/layout_01.webp" alt="단지배치도 1" loading="lazy"></a>
+            <a href="tel:1666-6093" class="image-link"><img src="images/call.webp" alt="콜" loading="lazy"></a>
+        </div>
+
+        <div id="special" class="section">
+            <div class="section-title">단지특화</div>
+            <a href="tel:1666-6093" class="image-link"><img src="images/special_01.webp" alt="단지특화 1" loading="lazy"></a>
+            <a href="tel:1666-6093" class="image-link"><img src="images/call.webp" alt="콜" loading="lazy"></a>
+        </div>
+
+        <div id="floorplan" class="section">
+            <div class="section-title">평면안내</div>
+            <a href="tel:1666-6093" class="image-link"><img src="images/floorplan_01.webp" alt="평면안내 1" loading="lazy"></a>
+            <a href="tel:1666-6093" class="image-link"><img src="images/floorplan_02.webp" alt="평면안내 2" loading="lazy"></a>
+            <a href="tel:1666-6093" class="image-link"><img src="images/floorplan_03.webp" alt="평면안내 3" loading="lazy"></a>
+            <a href="tel:1666-6093" class="image-link"><img src="images/floorplan_04.webp" alt="평면안내 4" loading="lazy"></a>
+            <a href="tel:1666-6093" class="image-link"><img src="images/call.webp" alt="콜" loading="lazy"></a>
+        </div>
+
+        <div id="contact" class="section" style="border-bottom: none; padding-bottom: 0;">
+            <div class="section-title">상담·방문문의</div>
+            <a href="tel:1666-6093" class="image-link"><img src="images/info_03.webp" alt="예약혜택" loading="lazy"></a>
+ 
+        </div>
+
+        <div class="form-section">
+            <h2>VIP 관심고객 등록 및 상담예약</h2>
+            <p>아래 정보를 남겨주시면 전문 상담사가 친절히 안내해 드립니다.<br>빠른 상담이 필요하시면 <strong>1666-6093</strong>으로 지금 바로 전화주세요.</p>
+            
+            <form name="vip_inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                
+                <p style="display: none;">
+                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                </p>
+
+                <div class="input-group">
+                    <input type="text" name="name" placeholder="성함을 입력해주세요" required>
+                </div>
+                <div class="input-group">
+                    <input type="tel" name="phone" placeholder="연락처를 입력해주세요 (예: 010-1234-5678)" required>
+                </div>
+                
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="privacy_agreement" required> 개인정보 수집 및 이용에 동의합니다.
+                    </label>
+                    <span class="view-details" onclick="openPrivacyModal()">[자세히 보기]</span>
+                </div>
+                
+                <button type="submit" class="submit-btn">특별 혜택 상담 신청하기</button>
+            </form>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-notice">
+                ※ 본 홍보물에 사용된 CG 및 일러스트, 이미지 등은 소비자의 이해를 돕기 위한 것으로 실제와 다를 수 있습니다.
+            </div>
+            <div class="footer-info">
+                <span><strong>시행수탁:</strong> 우리자산신탁</span>
+                <span><strong>시공:</strong> 동문건설</span>
+                <span><strong>위탁:</strong> (주)씨앤위</span>
+            </div>
+            <div class="footer-admin">
+                <span><strong>사이트관리자:</strong> 미쯔씨앤에이</span>
+                <span><strong>대표:</strong> 한동근</span>
+                <span><strong>사업자번호:</strong> 649-03-03725</span>
+            </div>
+            <div class="footer-copyright">
+                Copyright © All Rights Reserved.
+            </div>
+        </footer>
+
+    </div> 
+
+    <div id="privacyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>개인정보 수집 및 이용 동의</h3>
+                <span class="close-modal" onclick="closePrivacyModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>본 사이트는 분양 정보 안내 및 상담을 위해 아래와 같이 개인정보를 수집 및 이용합니다.</p>
+                <p>
+                    <strong>1. 수집하는 개인정보 항목</strong><br>
+                    - 필수항목: 이름, 연락처(휴대전화번호)
+                </p>
+                <p>
+                    <strong>2. 개인정보 수집 및 이용 목적</strong><br>
+                    -분양 관련 안내, 모델하우스 방문 예약, 전화 상담, SMS(문자) 발송
+                </p>
+                <p>
+                    <strong>3. 개인정보 보유 및 이용 기간</strong><br>
+                    - 분양 마감 시까지 보관하며, 사용자가 파기 요청 시 즉시 파기합니다.
+                </p>
+                <p>
+                    <strong>4. 동의를 거부할 권리</strong><br>
+                    - 귀하는 개인정보 수집 및 이용에 동의하지 않을 권리가 있으나, 동의 거부 시 분양 상담 및 관련 정보 안내 서비스 제공이 제한됩니다.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById("privacyModal");
+
+        // 모달 열기 함수
+        function openPrivacyModal() {
+            modal.style.display = "block";
+            // 모달이 열렸을 때 배경(body) 스크롤 방지
+            document.body.style.overflow = "hidden"; 
+        }
+
+        // 모달 닫기 함수
+        function closePrivacyModal() {
+            modal.style.display = "none";
+            // 모달이 닫히면 배경 스크롤 복구
+            document.body.style.overflow = "auto"; 
+        }
+
+        // 사용자가 모달창 바깥(어두운 배경)을 클릭했을 때 모달 닫기
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closePrivacyModal();
+            }
+        }
+    </script>
+
+</body>
+</html>
